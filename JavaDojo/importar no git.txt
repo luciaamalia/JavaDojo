@@ -1,0 +1,13 @@
+3
+
+A configuração e utilização de git junto com github e independente de eclipse. Para descarregar o cliente git pode acessar a: https://git-scm.com/download/win Se você querê descarregar um projeto de um repositório de github dentro de um pasta executar
+
+git init 
+git remote add origin https://github.com/repositorio/projeto.git
+git fetch origin
+git merge origin/master
+Depois só precisa importar o projeto em eclipse e trabalhar normalmente.Apos realizar alguma mudança para subir essa mudança no repositório executar:
+
+git add -A
+git commit -m "descrição do das mudanças do commit"
+git push origin master
